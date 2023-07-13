@@ -6,7 +6,7 @@ const PostList = () => {
 
   const renderPosts = posts.map((post) => {
     return (
-      <article key={post}>
+      <article key={post.id}>
         <h3>{post.title}</h3>
         <p>{post.content}</p>
       </article>
