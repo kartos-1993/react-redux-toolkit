@@ -38,11 +38,11 @@ const moon = (
 const NavBar = () => {
   const { theme, handlerThemeSwitch } = useContext(ThemeContext);
   return (
-    <nav className="flex justify-end min-h-min">
+    <nav className="flex justify-end min-h-min py-2 px-6">
       <button
         type="button"
         onClick={handlerThemeSwitch}
-        className="p-2 z-10   bg-violet-300 tex-lg rounded-md dark:bg-orange-100"
+        className="p-1 z-10   bg-violet-300 tex-lg rounded-md  dark:bg-gray-500"
       >
         {theme === "dark" ? sun : moon}
       </button>
